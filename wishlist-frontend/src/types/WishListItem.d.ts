@@ -5,5 +5,5 @@ export type ListItem = {
   /** Ссылка */
   link?: string;
   /** `ID` */
-  id: string | number;
+  id?: string | number;
 }
