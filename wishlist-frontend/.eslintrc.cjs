@@ -11,5 +11,22 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules: {
+    "vue/multi-word-component-names": "off",
+    "vue/no-setup-props-reactivity-loss": "error",
+    "vue/no-unused-refs": "error",
+    "vue/attributes-order": [
+      "error",
+      {
+        alphabetical: true,
+      },
+    ],
+    "vue/block-order": [
+      "error",
+      {
+        order: ["script", "template", "style"],
+      },
+    ],
   }
 }

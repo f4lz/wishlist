@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WishListItem from "@components/wishlist/WishListItem.vue"
+import WishListItem from "@components/wishlist/whish-list-item.vue"
 import type { ListItem } from '@/types/WishListItem';
 
 const items: ListItem[] = [
