@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+
 </script>
 
 <template>
-  <RouterView />
+  <div>
+    Тут должна UIКнопка
+  </div>
 </template>
