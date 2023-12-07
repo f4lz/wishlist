@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <default-layout>
+  <default>
     <wish-List/>
-  </default-layout>
+  </default>
 </template>
