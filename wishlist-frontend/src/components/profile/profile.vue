@@ -1,33 +1,41 @@
 <script lang="ts" setup>
-
-type Tab =  undefined | 'profile-friends' | 'profile-gifts' | 'profile-settings' 
+import { useNavigationStore } from '@/stores/navigation'
+import type { Tab } from '@/types/TabItem'
 
 const activeTab = ref<Tab>(undefined)
 
 function changeTab(selectedTab: Tab) {
-  if ( selectedTab === activeTab.value ) {
-    activeTab.value = undefined
-    return
-  }
   activeTab.value = selectedTab
 }
+
+const { navigation } = useNavigationStore()
+
 
 </script>
 
 <template>
   <div>
-    <button @click="changeTab('profile-friends')">
+    
+    <div class="flex flex-col gap-y-3 w-96">
+    <ui-button
+      v-for="navLink of navigation"
+      :key="navLink.title"
+      :icon="navLink.icon"
+      :title="navLink.title" />
+  </div>
+    
+    <!-- <button @click="changeTab('Друзья')">
       Друзья
     </button>
-    <button  @click="changeTab('profile-gifts')">
-      Настройки
-    </button>
-    <button  @click="changeTab('profile-settings')">
+    <button  @click="changeTab('Мои подарки')">
       Подарки
     </button>
+    <button  @click="changeTab('Настройки')">
+      Настройки
+    </button> -->
 
-      <profile-friends v-if="activeTab === undefined || activeTab === 'profile-friends'"/>
-      <profile-gifts v-if="activeTab === 'profile-gifts'"/>
-      <profile-settings v-if="activeTab === 'profile-settings'"/>
+      <profile-friends v-if="activeTab === undefined || activeTab === 'Друзья'"/>
+      <profile-gifts v-if="activeTab === 'Мои подарки'"/>
+      <profile-settings v-if="activeTab === 'Настройки'"/>
   </div>
 </template>
