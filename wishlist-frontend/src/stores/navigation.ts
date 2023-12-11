@@ -12,7 +12,7 @@ export const useNavigationStore = defineStore('navigation', () => {
     },
     {
       icon: 'material-symbols:featured-seasonal-and-gifts-rounded',
-      title: 'Друзья',
+      title: 'Мои подарки',
     },
   ]
 

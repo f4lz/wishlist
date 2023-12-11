@@ -1,9 +1,7 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <default>
-    <wish-List/>
-  </default>
+  <layouts-detault>
+    <wish-List />
+  </layouts-detault>
 </template>

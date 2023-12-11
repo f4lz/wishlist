@@ -8,14 +8,11 @@ defineProps<ListItem>()
 </script>
 
 <template>
-  <div>
+  <div class="flex flex-col gap-y-3 w-96">
     <ui-button
-      v-for="navigationLink of navigation"
-      :key="navigationLink.title"
-      :icon="navigationLink.icon"
-      :title="navigationLink.title" />
-    <a href="https://iconify.design/docs/icon-components/vue/dimensions.html">
-      библиотека иконок
-    </a>
+      v-for="navLink of navigation"
+      :key="navLink.title"
+      :icon="navLink.icon"
+      :title="navLink.title" />
   </div>
 </template>
