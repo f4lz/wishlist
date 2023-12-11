@@ -43,5 +43,5 @@
 .page,
 .page__body,
 .app {
-  height: 100%;
+  @apply h-full;
 }

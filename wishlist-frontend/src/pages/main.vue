@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-    <wish-List />
+  <wish-List />
 </template>

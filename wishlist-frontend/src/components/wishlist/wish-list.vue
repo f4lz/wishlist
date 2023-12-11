@@ -11,11 +11,13 @@ const items: ListItem[] = [
 </script>
 
 <template>
-  <wish-list-item
-    v-for="item in items"
-    :key="item.id"
-    :link="item?.link"
-    :title="item.title" />
+  <div class="container">
+    <wish-list-item
+      v-for="item in items"
+      :key="item.id"
+      :link="item?.link"
+      :title="item.title" />
+  </div>
 </template>
 
 <!-- {
