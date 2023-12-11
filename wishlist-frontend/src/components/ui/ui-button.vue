@@ -4,11 +4,17 @@ import { Icon } from '@iconify/vue'
 defineProps<{
   title: string
   icon: string
+  isActive: boolean
 }>()
+
+const emit = defineEmits<{
+  onclick: [title: string]
+}>()
+
 </script>
 
 <template>
-  <button class="button">
+  <button :class="['button', {'bg-accent text-secondary':isActive }]" @click="emit('onclick', title)">
     <Icon class="!w-6 !h-6 shrink-0" :icon="icon" />
     <p class="text-2xl">{{ title }}</p>
   </button>
