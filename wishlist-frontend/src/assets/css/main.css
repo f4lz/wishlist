@@ -1,45 +1,41 @@
+@import './colors.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
-    @apply font-montserrat text-black text-sm md:text-base lg:text-lg;
+    @apply font-montserrat text-primary text-sm md:text-base lg:text-lg;
   }
 
   h1 {
-    @apply lg:text-[56px] font-semibold; 
+    @apply lg:text-[56px] font-semibold;
   }
 
   h2 {
-    @apply text-5xl font-semibold; 
+    @apply text-5xl font-semibold;
   }
 
   h3 {
-    @apply text-4xl font-semibold; 
+    @apply text-4xl font-semibold;
   }
 
   h4 {
-    @apply text-[32px] font-semibold; 
+    @apply text-[32px] font-semibold;
   }
 
   h5 {
-    @apply text-2xl font-semibold; 
+    @apply text-2xl font-semibold;
   }
 
   h6 {
-    @apply text-base md:text-lg lg:text-2xl font-semibold; 
+    @apply text-base md:text-lg lg:text-2xl font-semibold;
   }
-
 }
 
 @layer components {
   .button {
-
-    &.primary {
-      @apply hover:bg-accent bg-background-primary text-primary hover:text-secondary;
-    }
-
+    @apply hover:bg-accent rounded-[10px] bg-background-secondary text-primary hover:text-secondary py-2.5 px-6 flex items-center gap-x-4 transition;
   }
 }

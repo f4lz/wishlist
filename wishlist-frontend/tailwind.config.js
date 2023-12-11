@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  plugins: [],
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -16,20 +17,17 @@ export default {
         semibold: "600",
       },
       colors: {
-        accent: {
-          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
-        },
+        accent:  "rgb(var(--color-accent) / <alpha-value>)",
         background: {
           primary: "rgb(var(--color-background-primary) / <alpha-value>)",
           secondary: "rgb(var(--color-background-secondary) / <alpha-value>)",
-          tertiary: "rgb(var(--color-background-tertiary) / <alpha-value>)",
         },
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-        tertiary: "rgb(var(--color-tertiary) / <alpha-value>)",
+        border: "rgb(var(--color-border) / <alpha-value>)",
+        error: "rgb(var(--color-error) / <alpha-value>)",
       },
     },
   },
-  plugins: [],
 }
 
