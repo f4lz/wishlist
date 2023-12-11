@@ -7,14 +7,14 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    DetaultLayout: typeof import('./src/components/layouts/detault-layout.vue')['default']
-    Error: typeof import('./src/components/layouts/error.vue')['default']
-    Header: (typeof import('./src/components/header/header.vue'))['default']
+    Erorr: typeof import('./src/components/layouts/erorr.vue')['default']
     LayoutsDetault: typeof import('./src/components/layouts/layouts-detault.vue')['default']
     Login: typeof import('./src/components/login/login.vue')['default']
+    PageNotFound: typeof import('./src/components/layouts/pageNotFound.vue')['default']
     Registration: typeof import('./src/components/registration/registration.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TheFooter: typeof import('./src/components/the-footer/the-footer.vue')['default']
     TheHeader: typeof import('./src/components/the-header/the-header.vue')['default']
     UiButton: typeof import('./src/components/ui/ui-button.vue')['default']
     WishList: typeof import('./src/components/wishlist/wish-list.vue')['default']

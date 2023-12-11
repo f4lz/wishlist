@@ -5,7 +5,7 @@ const items: ListItem[] = [
   {
     id: 1,
     title: 'Машину',
-    link: 'тут типо ссылка',
+    link: 'Ссылка на товар',
   },
 ]
 </script>
