@@ -2,4 +2,5 @@
 
 <template>
   <wish-List />
+  <profile />
 </template>

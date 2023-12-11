@@ -9,6 +9,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     LayoutsDetault: typeof import('./src/components/layouts/layouts-detault.vue')['default']
     Login: typeof import('./src/components/login/login.vue')['default']
+    Profile: typeof import('./src/components/profile/profile.vue')['default']
+    ProfileFriends: typeof import('./src/components/profile/profile-friends/profile-friends.vue')['default']
+    ProfileGifts: typeof import('./src/components/profile/profile-gifts/profile-gifts.vue')['default']
+    ProfileSettings: typeof import('./src/components/profile/profile-settings/profile-settings.vue')['default']
     Registration: typeof import('./src/components/registration/registration.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
