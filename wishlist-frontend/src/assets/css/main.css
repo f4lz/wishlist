@@ -10,27 +10,27 @@
   }
 
   h1 {
-    @apply lg:text-[56px] font-semibold;
-  }
-
-  h2 {
     @apply text-5xl font-semibold;
   }
 
-  h3 {
+  h2 {
     @apply text-4xl font-semibold;
   }
 
-  h4 {
-    @apply text-[32px] font-semibold;
+  h3 {
+    @apply text-3xl font-semibold;
   }
 
-  h5 {
+  h4 {
     @apply text-2xl font-semibold;
   }
 
+  h5 {
+    @apply text-xl font-semibold;
+  }
+
   h6 {
-    @apply text-base md:text-lg lg:text-2xl font-semibold;
+    @apply text-base md:text-lg font-semibold;
   }
 }
 
