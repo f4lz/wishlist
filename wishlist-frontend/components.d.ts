@@ -12,7 +12,6 @@ declare module 'vue' {
     Registration: typeof import('./src/components/registration/registration.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    UiButton: typeof import('./src/components/ui/ui-button.vue')['default']
     WishList: typeof import('./src/components/wishlist/wish-list.vue')['default']
     WishListItem: typeof import('./src/components/wishlist/wish-list-item.vue')['default']
   }
