@@ -1,1 +1,5 @@
-import type { ListItem } from "./WishListItem";
+export type UiContent = {
+    id: number | string,
+    title: string,
+    img: string,
+}

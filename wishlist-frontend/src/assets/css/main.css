@@ -36,7 +36,7 @@
 
 @layer components {
   .button {
-    @apply hover:bg-accent rounded-[10px] bg-background-secondary text-primary hover:text-secondary py-2.5 px-6 flex items-center gap-x-4 transition;
+    @apply hover:text-primary text-secondary flex items-center gap-x-4 transition;
   }
 }
 

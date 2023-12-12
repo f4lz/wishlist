@@ -15,14 +15,18 @@ const { navigation } = useNavigationStore()
 <template>
   <div class="container h-full w-full items-center flex">
 
-    <div class="bg-background-primary drop-shadow-lg rounded-large grid grid-cols-3 gap-x-7 py-11 px-14">
+    <div class="bg-background-primary drop-shadow-lg rounded-md grid grid-cols-3 gap-x-7 gap-y-16 py-11 px-14 items-start">
 
-          <div class="flex gap-x-3">
+          <div class="flex items-center gap-x-3">
             <div class="w-[50px] h-[50px] bg-amber-600 rounded-full"></div>
-            <div>Друзья: {{}}</div>
+            <div>
+              <h2>acc</h2> 
+              <!-- <div>Друзья: 3</div>
+              <div>Подарки: 2</div> -->
+            </div>
           </div>
 
-          <h1 class="mb-[65px] col-span-2">
+          <h1 class="col-span-2"> 
             {{ activeTab }}
           </h1>
 
@@ -37,7 +41,7 @@ const { navigation } = useNavigationStore()
         </div>
 
       <profile-friends v-if="activeTab === 'Друзья'" class="col-span-2" />
-      <profile-gifts v-if="activeTab === 'Мои подарки'"/>
+      <profile-gifts v-if="activeTab === 'Мои подарки'" class="col-span-2"/>
       <profile-settings v-if="activeTab === 'Настройки'"/>
 
     </div>

@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    <h6>Настройки</h6>
+    <h1>ZDAROVA ZALUPA</h1>
   </div>
 </template>

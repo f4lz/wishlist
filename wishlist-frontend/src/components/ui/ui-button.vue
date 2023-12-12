@@ -14,8 +14,8 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <button :class="['button', {'bg-accent text-secondary':isActive }]" @click="emit('onclick', title)">
+  <button :class="['button', {'text-primary':isActive }]" @click="emit('onclick', title)">
     <Icon class="!w-6 !h-6 shrink-0" :icon="icon" />
-    <p class="text-2xl">{{ title }}</p>
+    <p class="text-ml">{{ title }}</p>
   </button>
 </template>

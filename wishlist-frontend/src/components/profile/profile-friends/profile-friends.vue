@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-const friends: any[] = [
+import type { UiContent } from '@/types/main';
+
+const friends: UiContent[] = [
   {
     id: '1212',
     title: "Вика",
@@ -36,7 +38,7 @@ const friends: any[] = [
 <template>
   <div>
     <ui-grid :cols-number="4">
-      <profile-friends-card v-for="friend of friends" :key="friend.id" :friend="friend"/>
+      <ui-card v-for="friend of friends" :key="friend.id" :card="friend"/>
     </ui-grid>
   </div>
 </template>
