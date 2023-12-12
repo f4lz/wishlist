@@ -6,23 +6,23 @@
 
 @layer base {
   body {
-    @apply font-montserrat text-primary text-sm md:text-base lg:text-lg;
+    @apply font-inter text-primary text-sm md:text-base lg:text-lg;
   }
 
   h1 {
-    @apply text-5xl font-semibold;
+    @apply text-5xl font-montserrat font-semibold;
   }
 
   h2 {
-    @apply text-4xl font-semibold;
+    @apply text-4xl font-semibold font-montserrat;
   }
 
   h3 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl font-semibold font-montserrat;
   }
 
   h4 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl font-semibold font-montserrat;
   }
 
   h5 {

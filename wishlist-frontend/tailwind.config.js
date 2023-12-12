@@ -14,6 +14,7 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat Alternates'],
+        inter: ['Inter'],
       },
       fontWeight: {
         medium: '500',
