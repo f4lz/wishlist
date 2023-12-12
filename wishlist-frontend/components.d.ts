@@ -11,6 +11,7 @@ declare module 'vue' {
     Login: typeof import('./src/components/login/login.vue')['default']
     Profile: typeof import('./src/components/profile/profile.vue')['default']
     ProfileFriends: typeof import('./src/components/profile/profile-friends/profile-friends.vue')['default']
+    ProfileFriendsCard: typeof import('./src/components/profile/profile-friends/profile-friends-card.vue')['default']
     ProfileGifts: typeof import('./src/components/profile/profile-gifts/profile-gifts.vue')['default']
     ProfileSettings: typeof import('./src/components/profile/profile-settings/profile-settings.vue')['default']
     Registration: typeof import('./src/components/registration/registration.vue')['default']
@@ -19,6 +20,7 @@ declare module 'vue' {
     TheFooter: typeof import('./src/components/the-footer/the-footer.vue')['default']
     TheHeader: typeof import('./src/components/the-header/the-header.vue')['default']
     UiButton: typeof import('./src/components/ui/ui-button.vue')['default']
+    UiGrid: typeof import('./src/components/ui/ui-grid.vue')['default']
     WishList: typeof import('./src/components/wishlist/wish-list.vue')['default']
     WishListItem: typeof import('./src/components/wishlist/wish-list-item.vue')['default']
   }

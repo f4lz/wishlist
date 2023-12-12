@@ -7,6 +7,10 @@ export default {
     container: {
       center: true,
     },
+    borderRadius: {
+      large: '20px',
+      full: '9999px'
+    },
     extend: {
       fontFamily: {
         montserrat: ['Montserrat Alternates'],
