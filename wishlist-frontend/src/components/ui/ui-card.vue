@@ -22,6 +22,6 @@ defineProps<{
     <img v-if="card.img" :alt="card.title" :src="card.img" />
     <div v-else class="w-[100px] h-[100px] bg-black rounded-full" />
     <h5 class="font-normal">{{ card.title }}</h5>
+    <ui-context-menu v-if="isMenuOpen" />
   </div>
-  <ui-context-menu v-if="isMenuOpen" />
 </template>
