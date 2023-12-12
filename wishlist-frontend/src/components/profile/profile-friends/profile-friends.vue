@@ -7,31 +7,30 @@ const friends: any[] = [
   },
   {
     id: '12212',
-    title: "Вика",
+    title: "Аня",
     img: "hagdahd",
   },
   {
     id: '12122',
-    title: "Вика",
+    title: "Катя",
     img: "hagdahd",
   },
   {
     id: '12132',
-    title: "Вика",
+    title: "Игорь",
     img: "hagdahd",
   },
   {
     id: '12412',
-    title: "Вика",
+    title: "Игорь",
     img: "hagdahd",
   },
   {
     id: '12152',
-    title: "Вика",
+    title: "Игорь",
     img: "hagdahd",
   },
 ]
-
 </script>
 
 <template>

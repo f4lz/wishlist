@@ -17,7 +17,9 @@ const { navigation } = useNavigationStore()
 
     <div class="bg-background-primary drop-shadow-lg rounded-large grid grid-cols-3 gap-x-7 py-11 px-14">
 
-          <div class="w-[50px] h-[50px] bg-amber-600 rounded-full">
+          <div class="flex gap-x-3">
+            <div class="w-[50px] h-[50px] bg-amber-600 rounded-full"></div>
+            <div>Друзья: {{}}</div>
           </div>
 
           <h1 class="mb-[65px] col-span-2">
@@ -34,7 +36,7 @@ const { navigation } = useNavigationStore()
             @onclick="changeTab" />
         </div>
 
-      <profile-friends class="col-span-2" v-if="activeTab === 'Друзья'" />
+      <profile-friends v-if="activeTab === 'Друзья'" class="col-span-2" />
       <profile-gifts v-if="activeTab === 'Мои подарки'"/>
       <profile-settings v-if="activeTab === 'Настройки'"/>
 
