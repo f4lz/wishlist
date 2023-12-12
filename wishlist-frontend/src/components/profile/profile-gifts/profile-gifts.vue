@@ -31,7 +31,7 @@ const gifts: UiContent[] = [
 
 <template>
   <div>
-    <ui-grid :cols-number="4">
+    <ui-grid>
       <ui-card v-for="gift of gifts" :key="gift.id" :card="gift" is-gift />
     </ui-grid>
   </div>

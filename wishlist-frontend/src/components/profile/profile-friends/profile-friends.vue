@@ -31,7 +31,7 @@ const friends: UiContent[] = [
 
 <template>
   <div>
-    <ui-grid :cols-number="4">
+    <ui-grid :colsNumber="3">
       <ui-card v-for="friend of friends" :key="friend.id" :card="friend" />
     </ui-grid>
   </div>
