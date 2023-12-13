@@ -32,6 +32,10 @@
   h6 {
     @apply text-base md:text-lg font-semibold;
   }
+
+  span {
+    @apply text-sm;
+  }
 }
 
 @layer components {

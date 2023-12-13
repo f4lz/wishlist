@@ -6,7 +6,7 @@
       <h4>Ошибка</h4>
       <h1>404</h1>
       <h1>Старница не найдена</h1>
-      <router-link class="button p-3 border-2 border-black rounded-xl" to="/">
+      <router-link class="button p-3 border-2 border-black rounded-xl mt-5" to="/">
         Вернуться на главную страницу
       </router-link>
     </div>
