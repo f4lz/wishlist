@@ -26,6 +26,7 @@ declare module 'vue' {
     UiDropDownItem: typeof import('./src/components/ui/ui-drop-down.vue/ui-drop-down-item.vue')['default']
     UiGrid: typeof import('./src/components/ui/ui-grid.vue')['default']
     UiModal: typeof import('./src/components/ui/ui-modal.vue')['default']
+    UiWrapper: typeof import('./src/components/ui/ui-wrapper.vue')['default']
     WishList: typeof import('./src/components/wishlist/wish-list.vue')['default']
     WishListItem: typeof import('./src/components/wishlist/wish-list-item.vue')['default']
   }

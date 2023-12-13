@@ -1,6 +1,7 @@
 import layoutsDetault from '@/components/layouts/layouts-detault.vue'
 import pageNotFound from '@/pages/pageNotFound.vue'
 import addGift from '@pages/add-gift.vue'
+import login from '@pages/login-page.vue'
 import main from '@pages/main.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -20,6 +21,11 @@ const router = createRouter({
           path: '/add-gift',
           component: addGift,
           name: 'add-gift',
+        },
+        {
+          path: '/login',
+          component: login,
+          name: 'login',
         },
       ],
     },

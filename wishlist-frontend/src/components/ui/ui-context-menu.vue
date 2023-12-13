@@ -4,7 +4,7 @@ const emit = defineEmits(['onRemove', 'onEdit'])
 
 <template>
   <div
-    class="absolute z-10 bg-background-primary translate-x-1/2 rounded py-2.5 px-3.5 drop-shadow-xl w-48">
+    class="absolute z-30 bg-background-primary translate-x-1/2 rounded py-2.5 px-3.5 drop-shadow-xl w-48">
     <button class="hover:opacity-80 transition" @click="emit('onEdit')">
       Редактировать
     </button>

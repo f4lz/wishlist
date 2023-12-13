@@ -4,23 +4,23 @@ import { Icon } from '@iconify/vue'
 
 const gifts: UiContent[] = [
   {
-    id: '1212',
+    id: 1212,
     title: 'Холодильник',
   },
   {
-    id: '1212212',
+    id: 1212212,
     title: 'Шаурман',
   },
   {
-    id: '1228712',
+    id: 1228712,
     title: 'Телевизор',
   },
   {
-    id: '121212',
+    id: 121212,
     title: 'Валына',
   },
   {
-    id: '121212111',
+    id: 121212111,
     title: 'Шарф',
   },
 ]

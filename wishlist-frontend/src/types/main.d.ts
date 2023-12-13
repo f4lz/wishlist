@@ -1,5 +1,5 @@
 export type UiContent = {
-  id: number | string
+  id: number
   title: string
   img?: string
 }

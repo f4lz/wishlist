@@ -1,5 +1,5 @@
 <script lang="ts" setup></script>
 
 <template>
-  <ui-wrapper>Привет</ui-wrapper>
+  <login />
 </template>
