@@ -1,4 +1,5 @@
 import layoutsDetault from '@/components/layouts/layouts-detault.vue'
+import layoutsAuth from '@/components/layouts/layouts-auth.vue'
 import pageNotFound from '@/pages/pageNotFound.vue'
 import addGift from '@pages/add-gift.vue'
 import login from '@pages/login-page.vue'
@@ -22,12 +23,18 @@ const router = createRouter({
           component: addGift,
           name: 'add-gift',
         },
+      ],
+    },
+    {
+      path: '/auth/',
+      component: layoutsAuth,
+      children: [
         {
-          path: '/login',
+          path: 'login',
           component: login,
           name: 'login',
         },
-      ],
+      ]
     },
     {
       name: 'NotFound',
