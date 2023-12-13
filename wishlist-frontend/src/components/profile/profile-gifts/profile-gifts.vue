@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { UiContent } from '@/types/main'
-import { Icon } from '@iconify/vue';
+import { Icon } from '@iconify/vue'
 
 const gifts: UiContent[] = [
   {
@@ -29,11 +29,14 @@ const gifts: UiContent[] = [
 <template>
   <div>
     <ui-grid>
-      <div class="bg-background-secondary h-3/6 flex flex-col justify-center items-center drop-shadow hover:drop-shadow-2xl rounded-xl transition">
-        <button class="flex flex-col items-center">
-          <Icon class="!w-10 !h-10 shrink-0" icon="material-symbols:add-circle" />
+      <div
+        class="bg-background-secondary h-1/2 flex flex-col justify-center items-center drop-shadow hover:drop-shadow-2xl rounded-xl transition">
+        <router-link class="flex flex-col items-center" to="/add-gift">
+          <Icon
+            class="!w-10 !h-10 shrink-0"
+            icon="material-symbols:add-circle" />
           <p>Добавить подарок</p>
-        </button>
+        </router-link>
       </div>
       <ui-card v-for="gift of gifts" :key="gift.id" :card="gift" is-gift />
     </ui-grid>
