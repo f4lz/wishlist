@@ -3,6 +3,7 @@ import layoutsAuth from '@/components/layouts/layouts-auth.vue'
 import pageNotFound from '@/pages/pageNotFound.vue'
 import addGift from '@pages/add-gift.vue'
 import login from '@pages/login-page.vue'
+import registration from '@pages/registration-page.vue'
 import main from '@pages/main.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -33,6 +34,11 @@ const router = createRouter({
           path: 'login',
           component: login,
           name: 'login',
+        },
+        {
+          path: 'registration',
+          component: registration,
+          name: 'registration',
         },
       ]
     },

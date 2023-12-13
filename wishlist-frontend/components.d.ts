@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     LayoutsAuth: typeof import('./src/components/layouts/layouts-auth.vue')['default']
     LayoutsDetault: typeof import('./src/components/layouts/layouts-detault.vue')['default']
-    LayoutsLogin: typeof import('./src/components/layouts/layouts-login.vue')['default']
     Login: typeof import('./src/components/login/login.vue')['default']
     Profile: typeof import('./src/components/profile/profile.vue')['default']
     ProfileFriends: typeof import('./src/components/profile/profile-friends/profile-friends.vue')['default']
