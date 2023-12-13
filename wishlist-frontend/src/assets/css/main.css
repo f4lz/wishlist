@@ -36,6 +36,10 @@
   span {
     @apply text-sm;
   }
+
+  input {
+    @apply text-sm border-2 rounded-md px-2;
+  }
 }
 
 @layer components {
@@ -43,12 +47,12 @@
     @apply hover:text-primary text-secondary flex items-center gap-x-4 transition;
   }
   .button-primary {
-    @apply hover:text-primary text-secondary flex items-center gap-x-4 transition rounded-xl border border-primary ;
+    @apply hover:text-primary text-secondary flex items-center gap-x-4 transition rounded-xl border border-primary;
   }
 }
 
 .page,
-.page__body,  
+.page__body,
 .app {
   @apply h-full;
 }
