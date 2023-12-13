@@ -7,7 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    LayoutsAuth: typeof import('./src/components/layouts/layouts-auth.vue')['default']
     LayoutsDetault: typeof import('./src/components/layouts/layouts-detault.vue')['default']
+    LayoutsLogin: typeof import('./src/components/layouts/layouts-login.vue')['default']
     Login: typeof import('./src/components/login/login.vue')['default']
     Profile: typeof import('./src/components/profile/profile.vue')['default']
     ProfileFriends: typeof import('./src/components/profile/profile-friends/profile-friends.vue')['default']
@@ -21,9 +23,6 @@ declare module 'vue' {
     UiButton: typeof import('./src/components/ui/ui-button.vue')['default']
     UiCard: typeof import('./src/components/ui/ui-card.vue')['default']
     UiContextMenu: typeof import('./src/components/ui/ui-context-menu.vue')['default']
-    UiDropDown: typeof import('./src/components/ui/ui-drop-down.vue/ui-drop-down.vue')['default']
-    UiDropDownContent: typeof import('./src/components/ui/ui-drop-down.vue/ui-drop-down-content.vue')['default']
-    UiDropDownItem: typeof import('./src/components/ui/ui-drop-down.vue/ui-drop-down-item.vue')['default']
     UiGrid: typeof import('./src/components/ui/ui-grid.vue')['default']
     UiModal: typeof import('./src/components/ui/ui-modal.vue')['default']
     UiWrapper: typeof import('./src/components/ui/ui-wrapper.vue')['default']
