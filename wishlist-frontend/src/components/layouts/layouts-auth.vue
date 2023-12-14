@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-teal-300 h-full w-full">
-      <div class="container h-full w-full items-center flex justify-center ">
+    <div class="bg-gray-200 h-full w-full">
+      <div class="h-full w-full items-center flex justify-center">
         <div class="bg-background-primary drop-shadow-lg rounded-md py-11 px-14 items-start">
         <router-view />
         </div>

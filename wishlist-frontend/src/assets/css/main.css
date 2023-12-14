@@ -38,7 +38,7 @@
   }
 
   input {
-    @apply text-sm border-2 rounded-md px-2;
+    @apply text-sm border-2 rounded-md p-2;
   }
 }
 
