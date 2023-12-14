@@ -17,6 +17,9 @@ dependencies:
   vue-router:
     specifier: ^4.2.5
     version: 4.2.5(vue@3.3.10)
+  vuelidate:
+    specifier: ^0.7.7
+    version: 0.7.7
 
 devDependencies:
   '@iconify/vue':
@@ -3942,6 +3945,11 @@ packages:
       '@vue/server-renderer': 3.3.10(vue@3.3.10)
       '@vue/shared': 3.3.10
       typescript: 5.2.2
+
+  /vuelidate@0.7.7:
+    resolution: {integrity: sha512-pT/U2lDI67wkIqI4tum7cMSIfGcAMfB+Phtqh2ttdXURwvHRBJEAQ0tVbUsW9Upg83Q5QH59bnCoXI7A9JDGnA==}
+    engines: {node: '>= 4.0.0', npm: '>= 3.0.0'}
+    dev: false
 
   /w3c-xmlserializer@5.0.0:
     resolution: {integrity: sha512-o8qghlI8NZHU1lLPrpi2+Uq7abh4GGPpYANlalzWxyWteJOCsr/P+oPBA49TOLu5FTZO4d3F9MnWJfiMo4BkmA==}

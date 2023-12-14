@@ -47,7 +47,7 @@
     @apply hover:text-primary text-secondary flex items-center gap-x-4 transition;
   }
   .button-primary {
-    @apply hover:text-primary text-secondary flex items-center gap-x-4 transition rounded-xl border border-primary;
+    @apply text-primary bg-accent hover:text-white flex items-center transition rounded-full border  hover:border-primary py-2;
   }
 }
 
