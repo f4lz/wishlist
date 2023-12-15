@@ -5,7 +5,7 @@ export const useNavigationStore = defineStore('navigation', () => {
     {
       icon: 'material-symbols:featured-seasonal-and-gifts-rounded',
       title: 'Мои подарки',
-      url: '/',
+      url: '/gift',
     },
     {
       icon: 'material-symbols:group',

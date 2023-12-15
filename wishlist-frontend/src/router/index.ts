@@ -1,5 +1,4 @@
 import layoutsAuth from '@/components/layouts/layouts-auth.vue'
-import layoutsDefault from '@/components/layouts/layouts-detault.vue'
 import layoutsMenu from '@/components/layouts/layouts-menu.vue'
 import pageNotFound from '@/pages/pageNotFound.vue'
 import addGift from '@pages/add-gift.vue'
@@ -18,9 +17,9 @@ const router = createRouter({
       component: layoutsMenu,
       children: [
         {
-          path: '/',
-          name: 'home',
+          path: '/gift',
           component: main,
+          name: 'gift',
         },
         {
           path: '/friends',
@@ -32,12 +31,6 @@ const router = createRouter({
           component: settings,
           name: 'settings',
         },
-      ],
-    },
-    {
-      path: '/gifts',
-      component: layoutsDefault,
-      children: [
         {
           path: '/add-gift',
           component: addGift,
