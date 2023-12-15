@@ -3,36 +3,36 @@ import type { UiContent } from '@/types/main'
 
 const friends: UiContent[] = [
   {
-    id: '1212',
+    id: 1212,
     title: 'Вика',
   },
   {
-    id: '12212',
+    id: 12212,
     title: 'Аня',
   },
   {
-    id: '12122',
+    id: 12122,
     title: 'Катя',
   },
   {
-    id: '12132',
+    id: 12132,
     title: 'Игорь',
   },
   {
-    id: '12412',
+    id: 12412,
     title: 'Игорь',
   },
   {
-    id: '12152',
+    id: 12152,
     title: 'Игорь',
   },
 ]
 </script>
 
 <template>
-  <div>
+  <ui-content-wrapper title="Друзья">
     <ui-grid :colsNumber="3">
       <ui-card v-for="friend of friends" :key="friend.id" :card="friend" />
     </ui-grid>
-  </div>
+  </ui-content-wrapper>
 </template>

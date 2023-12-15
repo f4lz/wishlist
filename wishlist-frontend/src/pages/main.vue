@@ -1,6 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <wish-List />
-  <profile />
+  <profile-gifts />
 </template>

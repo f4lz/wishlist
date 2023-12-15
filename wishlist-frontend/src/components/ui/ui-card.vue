@@ -31,11 +31,12 @@ const isMenuOpen = computed(() => props.card.id === contextMenu.openedId)
 </script>
 
 <template>
-  <div
+  <router-link
     :class="[
-      'bg-background-primary relative z-0 flex flex-col gap-y-10 py-10 items-center drop-shadow hover:drop-shadow-2xl rounded-xl transition',
+      'bg-background-primary relative z-0 flex flex-col gap-y-10 py-12 px-6 justify-center items-center drop-shadow hover:drop-shadow-2xl rounded-3xl transition',
       { 'z-20': isMenuOpen },
-    ]">
+    ]"
+    to="/friends">
     <button
       v-if="isGift"
       class="absolute right-0 top-0 translate-y-1/2 -translate-x-1/2 hover:bg-background-secondary transition rounded-full"
@@ -49,5 +50,5 @@ const isMenuOpen = computed(() => props.card.id === contextMenu.openedId)
       v-if="isMenuOpen"
       @on-edit="onEdit"
       @on-remove="onRemove" />
-  </div>
+  </router-link>
 </template>

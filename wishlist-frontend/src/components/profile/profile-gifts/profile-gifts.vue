@@ -27,17 +27,15 @@ const gifts: UiContent[] = [
 </script>
 
 <template>
-  <div>
+  <ui-content-wrapper title="Мои подарки">
     <ui-grid>
-      <div
-        class="bg-background-primary flex flex-col justify-center items-center drop-shadow hover:drop-shadow-2xl rounded-xl transition">
-        <router-link class="flex flex-col items-center" to="/add-gift">
-          <Icon
-            class="!w-10 !h-10 shrink-0"
-            icon="material-symbols:add-circle" />
-        </router-link>
-      </div>
+      <router-link
+        class="bg-background-primary flex flex-col justify-center items-center drop-shadow hover:drop-shadow-2xl rounded-3xl transition"
+        to="/add-gift">
+        <Icon class="!w-10 !h-10 shrink-0" icon="material-symbols:add-circle" />
+        <p>Добавить подарок</p>
+      </router-link>
       <ui-card v-for="gift of gifts" :key="gift.id" :card="gift" is-gift />
     </ui-grid>
-  </div>
+  </ui-content-wrapper>
 </template>

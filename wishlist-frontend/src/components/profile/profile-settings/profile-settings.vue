@@ -1,20 +1,31 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="flex gap-7">
-    <div class="flex flex-col align-center w-2/4 gap-y-4">
-      <div class="w-[150px] h-[150px] bg-black rounded-full"></div>
-      <input class="text-[18px] border-1 rounded px-0 "  type="file">
-    </div>
-    <div class="flex flex-col gap-y-16">
-      <div>
-        <span>Изменить имя</span>
-        <input class="w-[465px] h-[39px] border border-black" placeholder="введите имя" type="text"/>
+  <ui-content-wrapper title="Настройки">
+    <div class="flex h-96 flex-wrap gap-x-8">
+      <div class="flex flex-col align-center gap-y-6">
+        <div class="w-[150px] h-[150px] bg-black rounded-full"></div>
+        <div
+          class="border rounded-full py-1 px-4 bg-accent text-background-primary hover:opacity-80 transition-opacity w-full relative my-[15px] text-center">
+          <input
+            id="input__file"
+            class="opacity-0 absolute invisible"
+            name="file"
+            type="file" />
+          <label class="text-base" for="input__file">Изменить</label>
+        </div>
       </div>
-      <div>
-        <span>Новый пароль</span>
-        <input class="w-[465px] h-[39px] border border-black" placeholder="введите пароль" type="text"/>
+      <div class="flex flex-col gap-y-6">
+        <ui-input
+          classes="xl:w-[364px]"
+          placeholder="Введите имя"
+          title="Имя" />
+        <ui-input
+          classes="xl:w-[364px]"
+          placeholder="Введите пароль"
+          title="Пароль"
+          type="password" />
+      </div>
     </div>
-    </div>
-  </div>
+  </ui-content-wrapper>
 </template>
